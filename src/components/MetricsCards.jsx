@@ -1,14 +1,6 @@
 import { TrendingUp, TrendingDown, DollarSign, Target, BarChart3, Calendar } from "lucide-react";
 
-interface MetricCardProps {
-  title: string;
-  value: string;
-  change?: string;
-  changeType?: 'positive' | 'negative' | 'neutral';
-  icon: React.ReactNode;
-}
-
-const MetricCard = ({ title, value, change, changeType = 'neutral', icon }: MetricCardProps) => {
+const MetricCard = ({ title, value, change, changeType = 'neutral', icon }) => {
   return (
     <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-all duration-300">
       <div className="flex items-center justify-between mb-4">

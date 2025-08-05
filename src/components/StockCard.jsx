@@ -1,16 +1,6 @@
 import { TrendingUp, TrendingDown } from "lucide-react";
 
-interface StockCardProps {
-  symbol: string;
-  name: string;
-  price: number;
-  change: number;
-  changePercent: number;
-  shares: number;
-  value: number;
-}
-
-const StockCard = ({ symbol, name, price, change, changePercent, shares, value }: StockCardProps) => {
+const StockCard = ({ symbol, name, price, change, changePercent, shares, value }) => {
   const isPositive = change >= 0;
 
   return (

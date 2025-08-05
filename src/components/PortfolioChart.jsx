@@ -47,7 +47,7 @@ const PortfolioChart = () => {
                 borderRadius: '8px',
                 color: 'hsl(var(--foreground))'
               }}
-              formatter={(value: number) => [`$${value.toLocaleString()}`, 'Portfolio Value']}
+              formatter={(value) => [`$${value.toLocaleString()}`, 'Portfolio Value']}
             />
             <Line 
               type="monotone" 

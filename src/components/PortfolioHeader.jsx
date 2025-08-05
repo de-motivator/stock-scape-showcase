@@ -1,12 +1,6 @@
 import { TrendingUp, TrendingDown, Bell, Settings, User } from "lucide-react";
 
-interface PortfolioHeaderProps {
-  totalValue: number;
-  dailyChange: number;
-  dailyChangePercent: number;
-}
-
-const PortfolioHeader = ({ totalValue, dailyChange, dailyChangePercent }: PortfolioHeaderProps) => {
+const PortfolioHeader = ({ totalValue, dailyChange, dailyChangePercent }) => {
   const isPositive = dailyChange >= 0;
 
   return (
