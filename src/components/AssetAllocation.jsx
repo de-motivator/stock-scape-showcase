@@ -36,7 +36,7 @@ const AssetAllocation = () => {
                 borderRadius: '8px',
                 color: 'hsl(var(--foreground))'
               }}
-              formatter={(value: number) => [`${value}%`, 'Allocation']}
+              formatter={(value) => [`${value}%`, 'Allocation']}
             />
             <Legend 
               verticalAlign="bottom" 

@@ -22,9 +22,9 @@ const PortfolioHeader = ({ totalValue, dailyChange, dailyChangePercent }) => {
             
             <div className="flex items-center space-x-2">
               {isPositive ? (
-                <TrendingUp className={`h-5 w-5 text-success`} />
+                <TrendingUp className="h-5 w-5 text-success" />
               ) : (
-                <TrendingDown className={`h-5 w-5 text-danger`} />
+                <TrendingDown className="h-5 w-5 text-danger" />
               )}
               <div>
                 <p className={`text-lg font-semibold ${isPositive ? 'text-success' : 'text-danger'}`}>

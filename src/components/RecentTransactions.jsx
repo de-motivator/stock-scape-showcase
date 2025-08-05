@@ -26,9 +26,9 @@ const RecentTransactions = () => {
                 transaction.type === 'buy' ? 'bg-success/20' : 'bg-danger/20'
               }`}>
                 {transaction.type === 'buy' ? (
-                  <ArrowDownLeft className={`h-4 w-4 text-success`} />
+                  <ArrowDownLeft className="h-4 w-4 text-success" />
                 ) : (
-                  <ArrowUpRight className={`h-4 w-4 text-danger`} />
+                  <ArrowUpRight className="h-4 w-4 text-danger" />
                 )}
               </div>
               

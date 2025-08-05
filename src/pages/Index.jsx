@@ -28,23 +28,17 @@ const Index = () => {
       />
       
       <div className="p-6 space-y-6">
-        {/* Key Metrics */}
         <MetricsCards />
         
-        {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Portfolio Chart - Takes 2 columns */}
           <div className="lg:col-span-2">
             <PortfolioChart />
           </div>
-          
-          {/* Asset Allocation */}
           <div>
             <AssetAllocation />
           </div>
         </div>
         
-        {/* Portfolio Holdings */}
         <div>
           <h2 className="text-xl font-bold text-foreground mb-4">Your Holdings</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -54,19 +48,13 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Bottom Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Watchlist */}
           <div>
             <WatchList />
           </div>
-          
-          {/* Recent Transactions */}
           <div>
             <RecentTransactions />
           </div>
-          
-          {/* Market News */}
           <div>
             <MarketNews />
           </div>
